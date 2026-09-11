@@ -1,186 +1,107 @@
-# Awesome-API-Gateway
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome API Gateway" width="100%" />
+</p>
 
-# 🚪 Top API Gateways & Open-Source API Gateway Software
+# 🚪 Awesome API Gateway & Management Platforms
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Gateway/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-API-Gateway?style=flat-square&logo=github&color=gold" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Gateway/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-API-Gateway?style=flat-square&logo=github&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Gateway/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-API-Gateway?style=flat-square&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Gateway/commits/main"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-API-Gateway?style=flat-square" alt="Last Commit"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-
-> A curated list of **API Gateways, API Management platforms, cloud API gateways, Kubernetes gateways and open-source API gateway software** for routing, securing, governing and observing APIs.
-
-
+> 🚀 A curated list of **API Gateways, API Management platforms, cloud API gateways, Kubernetes Gateway API ingress controllers, high-performance edge proxies, and open-source API gateway software** for routing, securing, governing, observing, and scaling microservices and AI workloads.
 
 An API Gateway sits at the edge of an application or microservices platform and commonly provides:
 
+* 🚦 **Request routing & load balancing**
+* 🔐 **Authentication and authorization (OAuth2, OIDC, JWT, mTLS)**
+* 🛡️ **TLS termination & Web Application Firewall (WAF)**
+* ⏱️ **Rate limiting, throttling & quotas**
+* 🔑 **API keys & consumer management**
+* 🔄 **Traffic transformation & request/response mutation**
+* ⚡ **Response caching & edge acceleration**
+* ⚡ **Circuit breaking & fault tolerance**
+* 🎯 **Canary releases, blue/green deployments & traffic mirroring**
+* 🏷️ **API versioning & deprecation lifecycle**
+* 📊 **Observability (OpenTelemetry, Prometheus, distributed tracing)**
+* 📖 **Developer portals & interactive API catalogs**
+* 📜 **API policies, validation & schema enforcement**
+* 💳 **API monetization & subscription billing**
+* 🔍 **Service discovery & dynamic backends**
+* 🔌 **WebSocket, gRPC & HTTP/3 support**
+* ☸️ **Kubernetes Ingress & Gateway API integration**
+* 🤖 **AI / LLM traffic management, prompt routing & token rate limiting**
 
+This repository focuses primarily on **open-source and self-hostable API gateways**, while maintaining a comprehensive, transparent guide of hosted and commercial platforms such as Kong Konnect, Google Apigee, Tyk Cloud, Gravitee, MuleSoft, Azure API Management, AWS API Gateway, IBM API Connect and WSO2.
 
-* Request routing
-
-* Load balancing
-
-* Authentication and authorization
-
-* TLS termination
-
-* Rate limiting
-
-* Quotas
-
-* API keys
-
-* JWT / OAuth / OIDC
-
-* Traffic transformation
-
-* Request / response transformation
-
-* Caching
-
-* Circuit breaking
-
-* Canary releases
-
-* API versioning
-
-* Observability
-
-* Developer portals
-
-* API policies
-
-* Monetization
-
-* Service discovery
-
-* WebSocket / gRPC support
-
-* Kubernetes / Gateway API integration
-
-* AI / LLM traffic management
-
-
-
-This repository focuses primarily on **open-source and self-hostable API gateways**, while maintaining a separate list of hosted and commercial platforms such as Kong Konnect, Google Apigee, Tyk, Gravitee, MuleSoft, Azure API Management, AWS API Gateway, IBM API Connect and WSO2.
-
-
-
-> **Important distinction:** an API Gateway is not necessarily the same thing as a complete API Management platform. A gateway primarily handles runtime traffic, while API management can additionally include API design, lifecycle management, developer portals, analytics, governance, monetization and organizational workflows.
-
-
+> 💡 **Important distinction:** An API Gateway is not necessarily the same thing as a complete API Management platform. A gateway primarily handles runtime traffic, while API management can additionally include API design, lifecycle management, developer portals, analytics, governance, monetization and organizational workflows.
 
 ---
-
-
 
 ## 📑 Table of Contents
 
-
-
 * [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
-
 * [🌍 Open-Source](#-open-source)
-
 * [🚪 Open-Source API Gateways](#-open-source-api-gateways)
-
 * [☸️ Kubernetes & Cloud-Native API Gateways](#️-kubernetes--cloud-native-api-gateways)
-
 * [⚡ High-Performance API Gateways](#-high-performance-api-gateways)
-
 * [🔀 API Gateway & Reverse Proxy Software](#-api-gateway--reverse-proxy-software)
-
 * [🧩 Service Mesh & Programmable Proxies](#-service-mesh--programmable-proxies)
-
 * [🔐 Open-Source API Security](#-open-source-api-security)
-
 * [🚦 Open-Source Traffic Management](#-open-source-traffic-management)
-
 * [📊 Open-Source API Gateway Observability](#-open-source-api-gateway-observability)
-
 * [🛠️ Open-Source API Gateway Control Planes](#️-open-source-api-gateway-control-planes)
-
 * [🤖 Open-Source AI Gateways](#-open-source-ai-gateways)
-
 * [🧩 Commercial Platform → Open-Source Equivalent](#-commercial-platform--open-source-equivalent)
-
 * [🏗️ API Gateway Architecture](#️-api-gateway-architecture)
-
 * [🔄 Open-Source API Gateway Architecture](#-open-source-api-gateway-architecture)
-
 * [☸️ Kubernetes API Gateway Architecture](#️-kubernetes-api-gateway-architecture)
-
 * [🔐 API Security Architecture](#-api-security-architecture)
-
 * [📊 API Gateway Technology Comparison](#-api-gateway-technology-comparison)
-
 * [⚖️ Commercial vs Open-Source](#️-commercial-vs-open-source)
-
 * [🚀 Recommended Open-Source Stacks](#-recommended-open-source-stacks)
-
 * [🎯 Recommended Projects by Use Case](#-recommended-projects-by-use-case)
-
 * [🏢 Building a Kong Alternative](#-building-a-kong-alternative)
-
 * [🏗️ Building an Apigee Alternative](#️-building-an-apigee-alternative)
-
 * [🌐 Open-Source API Gateway Landscape](#-open-source-api-gateway-landscape)
-
 * [🧠 API Gateway Layers](#-api-gateway-layers)
-
 * [🔥 Why Open-Source API Gateways Matter](#-why-open-source-api-gateways-matter)
-
+* [❓ Frequently Asked Questions (FAQ)](#-frequently-asked-questions-faq)
+* [📈 Star History](#-star-history)
 * [🤝 Contributing](#-contributing)
-
 * [⚠️ Disclaimer](#️-disclaimer)
-
-
 
 ---
 
-
-
 # ☁️ SaaS/Hosted Platforms
-
-
 
 Commercial and managed API gateway platforms combine runtime traffic management with varying degrees of API lifecycle management, analytics, governance and developer tooling.
 
+> 🌐 **Market Overview & Industry Structure:** The global API Management & Gateway market size was estimated at **$5.1B – $6.2B in 2024–2025** and is projected to reach **$15.2B+ by 2030** (growing at a ~28–31% CAGR). The sector is **moderately fragmented**: while hyperscale cloud providers (Microsoft, Google Cloud, AWS) and legacy enterprise integration incumbents (Salesforce MuleSoft, IBM) command large enterprise market share, specialized high-performance vendors (Kong, Tyk, Traefik, Gravitee, Solo.io) and vibrant open-source ecosystems prevent a winner-take-all monopoly, driving intense multi-cloud competition.
 
-
-| Platform                                                                                        | Company      | Primary Focus                           | Key Capabilities                                                                       |
-
-| ----------------------------------------------------------------------------------------------- | ------------ | --------------------------------------- | -------------------------------------------------------------------------------------- |
-
-| [Kong Konnect](https://konghq.com/products/kong-konnect)                                        | Kong         | Cloud API platform                      | API Gateway, service connectivity, governance, analytics and AI Gateway                |
-
-| [Google Apigee](https://cloud.google.com/apigee)                                                | Google Cloud | Enterprise API Management               | Gateway, policies, analytics, developer portals, monetization and lifecycle management |
-
-| [Tyk Cloud](https://tyk.io/)                                                                    | Tyk          | API Management                          | Gateway, API management, GraphQL, analytics and developer portal                       |
-
-| [Gravitee](https://www.gravitee.io/)                                                            | Gravitee     | API Management                          | REST, event APIs, security, gateway, portal and governance                             |
-
-| [MuleSoft Anypoint API Manager](https://www.mulesoft.com/platform/api)                          | Salesforce   | Enterprise integration + API Management | Gateway, policies, lifecycle, analytics and integration                                |
-
-| [Azure API Management](https://azure.microsoft.com/products/api-management/)                    | Microsoft    | Cloud API Management                    | Gateway, policies, developer portal, analytics and hybrid deployment                   |
-
-| [Amazon API Gateway](https://aws.amazon.com/api-gateway/)                                       | AWS          | Managed cloud gateway                   | REST, HTTP, WebSocket APIs, throttling and AWS integration                             |
-
-| [IBM API Connect](https://www.ibm.com/products/api-connect)                                     | IBM          | Enterprise API Management               | Gateway, lifecycle, security, analytics and developer portal                           |
-
-| [WSO2 API Manager](https://wso2.com/api-manager/)                                               | WSO2         | Full API lifecycle                      | Gateway, lifecycle, security, analytics and developer portal                           |
-
-| [Traefik Hub](https://traefik.io/traefik-hub/)                                                  | Traefik      | Cloud-native API management             | Kubernetes gateway, ingress, API management and observability                          |
-
-| [NGINX Plus](https://www.nginx.com/products/nginx/)                                             | F5           | High-performance gateway                | Reverse proxy, load balancing, API gateway and security                                |
-
-| [KrakenD Enterprise](https://www.krakend.io/)                                                   | KrakenD      | API Gateway / API Aggregation           | High-performance gateway, aggregation, security and enterprise management              |
-
-| [Gloo Gateway](https://www.solo.io/products/gloo-gateway)                                       | Solo.io      | Kubernetes API Gateway                  | Envoy-based gateway, Gateway API and enterprise management                             |
-
-| [AWS AppSync](https://aws.amazon.com/appsync/)                                                  | AWS          | GraphQL API layer                       | Managed GraphQL gateway and API integration                                            |
-
-| [Azure Application Gateway](https://azure.microsoft.com/products/application-gateway/)          | Microsoft    | Application gateway                     | L7 routing, TLS, WAF and load balancing                                                |
-
-| [Cloudflare API Gateway](https://www.cloudflare.com/application-services/products/api-gateway/) | Cloudflare   | Edge API security                       | API discovery, security, rate limiting and edge traffic management                     |
-
-
+| Platform | Company | Company Size (Valuation / Market Cap) | Primary Focus | Key Capabilities | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [Azure API Management](https://azure.microsoft.com/products/api-management/) | Microsoft | ~$3.1T Market Cap | Cloud API Management | Gateway, policies, developer portal, analytics and hybrid deployment | Consumption: $3.50 per 1M calls (first 1M free); Developer tier: $48.04/month; Basic v2: $146/month; Standard v2: $730/month | Free forever: Consumption tier includes 1,000,000 free calls/month per subscription (no SLA); plus 30-day $200 Azure trial credits |
+| [Azure Application Gateway](https://azure.microsoft.com/products/application-gateway/) | Microsoft | ~$3.1T Market Cap | Application gateway | L7 routing, TLS termination, WAF and load balancing | Standard v2 starts at $0.246/hour (~$180/month) + $0.008/Capacity Unit-hour; WAF v2 starts at $0.443/hour (~$323/month) | 30-day free trial via $200 Azure trial credits (no permanent free tier for Application Gateway) |
+| [Google Apigee](https://cloud.google.com/apigee) | Google Cloud | ~$2.1T Market Cap | Enterprise API Management | Gateway, policies, analytics, developer portals, monetization and lifecycle management | Pay-as-you-go starts at $0.50/environment-hour (~$365/month per region) + $20 per 1M standard proxy calls ($100/1M extensible proxy calls) | 60-day free trial (evaluation organization) with full enterprise capabilities and analytics + $300 Google Cloud 90-day trial credits |
+| [Amazon API Gateway](https://aws.amazon.com/api-gateway/) | AWS | ~$1.9T Market Cap | Managed cloud gateway | REST, HTTP, WebSocket APIs, throttling and AWS integration | HTTP APIs: $1.00 per 1M calls; REST APIs: $3.50 per 1M calls; WebSocket APIs: $1.00 per 1M messages + $0.25/million connection-minutes | AWS Free Tier: 1,000,000 HTTP calls, 1,000,000 REST calls, and 1,000,000 WebSocket messages (+ 750,000 connection-mins)/month for first 12 months |
+| [AWS AppSync](https://aws.amazon.com/appsync/) | AWS | ~$1.9T Market Cap | GraphQL API layer | Managed GraphQL gateway and API integration | $4.00 per 1M GraphQL query/mutation operations; $2.00 per 1M real-time update messages + $0.08 per 1M connection-minutes | AWS Free Tier: 250,000 query/mutation operations, 250,000 real-time updates, and 600,000 connection-minutes/month for first 12 months |
+| [MuleSoft Anypoint API Manager](https://www.mulesoft.com/platform/api) | Salesforce | ~$280B Market Cap | Enterprise integration + API Management | Gateway, policies, lifecycle, analytics and integration | Integration Starter / Base packages start at ~$55,000/year (~$4,583/month) for core flows/messages; tiered volume pricing | 30-day free trial of Anypoint Platform with full API design, mock, and management capabilities (evaluation sandbox, non-production) |
+| [IBM API Connect](https://www.ibm.com/products/api-connect) | IBM | ~$210B Market Cap | Enterprise API Management | Gateway, lifecycle, security, analytics and developer portal | Pay-as-you-go SaaS on AWS / IBM Cloud starts at $100/month (includes base calls; additional calls from ~$0.0015/call); Reserved from ~$3,000/month | 30-day free trial limited to 100,000 API calls and 1 service instance (no credit card required, non-production) |
+| [Cloudflare API Gateway](https://www.cloudflare.com/application-services/products/api-gateway/) | Cloudflare | ~$35B Market Cap | Edge API security | API discovery, security, rate limiting and edge traffic management | Enterprise add-on starting at ~$2,000/month (base Cloudflare Enterprise contracts start at ~$3,000–$5,000/month) | 30-day Enterprise POC / trial upon sales consultation; Cloudflare Free plan includes basic edge proxy/DNS/DDoS and 100,000 Worker requests/day |
+| [NGINX Plus](https://www.nginx.com/products/nginx/) | F5 | ~$14B Market Cap | High-performance gateway | Reverse proxy, load balancing, API gateway and security | Starts at $2,500 per instance/year (~$208/month); NGINXaaS on cloud starts at ~$0.08/NCU-hour; App Protect WAF is +$2,000/instance/year | 30-day free trial with unrestricted access to NGINX Plus features and support (or $100 cloud credit); NGINX OSS is free forever |
+| [Kong Konnect](https://konghq.com/products/kong-konnect) | Kong | ~$2.0B Valuation | Cloud API platform | API Gateway, service connectivity, governance, analytics and AI Gateway | Plus tier starts at $250/month (includes 1M requests/mo, 5 Serverless Gateways, 2 Dev Portals; $200 per additional 1M requests up to 10M) | 30-day free trial with full enterprise functionality, up to 5 serverless gateways, and no credit card required; Kong OSS is free forever self-hosted |
+| [Gloo Gateway](https://www.solo.io/products/gloo-gateway) | Solo.io | ~$1.0B Valuation | Kubernetes API Gateway | Envoy-based gateway, Gateway API and enterprise management | Commercial enterprise cluster subscriptions start at ~$15,000/year (~$1,250/month) for small production clusters | 30-day free trial evaluation license key with full enterprise features (WAF, portal, OIDC); kgateway (Gloo OSS) is free forever under Apache 2.0 |
+| [WSO2 API Manager](https://wso2.com/api-manager/) | WSO2 | ~$600M Valuation | Full API lifecycle | Gateway, lifecycle, security, analytics and developer portal | Choreo Pay-As-You-Go starts at $150/component/month; Enterprise Managed Cloud starts at ~$1,500/month; WSO2 API Manager OSS is free self-hosted | Free forever: Choreo Free tier includes 1 project, 5 components (APIs), $100/mo infrastructure credits, 2M calls/mo, and 10 Dev Portal apps |
+| [Gravitee](https://www.gravitee.io/) | Gravitee | ~$300M+ Valuation | API Management | REST, event APIs, security, gateway, portal and governance | Planet tier starts at $2,500/month (includes 1 production gateway, unlimited APIs and users); Event Management starts at $1,250/month | 14-day free trial for Enterprise Edition (Cockpit access, advanced security policies, no credit card required); Community Edition is free forever open source |
+| [Traefik Hub](https://traefik.io/traefik-hub/) | Traefik | ~$150M+ Valuation | Cloud-native API management | Kubernetes gateway, ingress, API management and observability | Commercial gateway & management tiers start at ~$1,000/month (instance/cluster-based pricing); Traefik Proxy OSS is free | 30-day free trial for Traefik Hub API Gateway / Management with full features and no credit card required; Traefik Proxy is free forever under MIT |
+| [Tyk Cloud](https://tyk.io/) | Tyk | ~$100M+ Valuation | API Management | Gateway, API management, GraphQL, analytics and developer portal | Cloud Core starts at $600/month (includes up to 5 APIs and 10 million monthly calls; scaling to $3,800/mo for 100M calls); Self-Managed custom quoted | 48-hour free trial for Tyk Cloud SaaS with full platform access (or 14-day free trial for self-managed enterprise); Tyk Gateway OSS is free forever under MPL-2.0 |
+| [KrakenD Enterprise](https://www.krakend.io/) | KrakenD | ~$15M+ Valuation | API Gateway / API Aggregation | High-performance gateway, aggregation, security and enterprise management | Flat-rate enterprise subscription starting at ~$1,500/month (~$18,000/year) per cluster with unlimited throughput; managed hosting from ~$11/mo on cloud partners | 2-month (60-day) free trial of KrakenD Enterprise with full feature access (gRPC, WebSockets, FIPS, multi-IdP); Community Edition is free forever open source with no call limits |
 
 The current API gateway landscape spans gateway-first products such as Kong, Tyk and APISIX, full API-management platforms such as Apigee and WSO2, and cloud-native gateways such as Gloo Gateway.
 
@@ -244,93 +165,67 @@ Instead of buying a complete proprietary platform, organizations can assemble an
 
 The strongest open-source projects include:
 
-
-
-* Apache APISIX
-
-* Kong Gateway
-
-* Tyk Gateway
-
-* Gravitee
-
-* WSO2 API Manager
-
-* Traefik
-
-* Envoy
-
-* Envoy Gateway
-
-* KrakenD
-
-* Apache ShenYu
-
-* Higress
-
-* Gloo Gateway / kgateway
-
-* HAProxy
-
-* NGINX
-
-* Caddy
-
-* Zuul
-
-* Spring Cloud Gateway
-
-
-
-Apache APISIX, Kong, Envoy and Traefik are among the major open-source gateway choices, with materially different configuration, extension and deployment models.
-
-
+* 🛡️ **Caddy** – Automatic HTTPS reverse proxy & edge server
+* 🚦 **Traefik Proxy** – Modern cloud-native dynamic reverse proxy & ingress
+* 🦍 **Kong Gateway** – Scalable NGINX/Lua API gateway with extensive plugin ecosystem
+* 🕸️ **Istio Ingress Gateway** – Industry-standard service mesh & gateway
+* ⚡ **Envoy Proxy** – High-performance programmable C++ proxy
+* 🌐 **NGINX** – High-performance reverse proxy & web foundation
+* 🤖 **LiteLLM Gateway** – Universal AI / LLM proxy & router
+* 🐝 **Cilium** – eBPF-native Kubernetes Gateway API & service mesh
+* 🥇 **Apache APISIX** – Dynamic, high-throughput cloud-native API gateway
+* 🍿 **Zuul** – Netflix JVM-based edge gateway & filter engine
+* 🐍 **Tyk Gateway** – High-performance Go gateway with GraphQL support
+* 🔷 **Ocelot** – Lightweight .NET microservice API gateway
+* 🐙 **KrakenD** – Ultra-fast stateless API aggregator & gateway
+* 🌊 **OpenResty** – Full-fledged web platform integrating NGINX & LuaJIT
+* 🚀 **BFE** – Industrial-grade layer 7 routing & proxy engine
+* 🎯 **Easegress** – Traffic orchestration & resilience reverse proxy
+* ⚖️ **HAProxy** – World-renowned TCP/HTTP load balancer & proxy
+* 🍃 **Spring Cloud Gateway** – Reactive Spring Boot 3 API routing architecture
+* ☁️ **Higress** – Next-gen cloud-native gateway based on Envoy & Istio
+* 🚪 **Emissary-Ingress** – CNCF Envoy-based ingress controller & gateway
+* 🔮 **Apache ShenYu** – Asynchronous multi-protocol Java API gateway
+* 🗺️ **Contour** – High-performance Envoy ingress controller for Kubernetes
+* ⚡ **Express Gateway** – Microservices API gateway built on Express.js
+* 🌊 **Gravitee** – Event-native and REST API management platform
+* ☸️ **Envoy Gateway** – Official CNCF Kubernetes Gateway API controller
+* 🛠️ **Gloo Gateway / kgateway** – Kubernetes Gateway API control plane
 
 ---
 
-
-
 # 🚪 Open-Source API Gateways
 
+| Project | GitHub Stars | Language / Foundation | Primary Strength | License |
+| :--- | :---: | :--- | :--- | :--- |
+| [Caddy](https://github.com/caddyserver/caddy) | [![GitHub stars](https://img.shields.io/github/stars/caddyserver/caddy?style=social&color=white)](https://github.com/caddyserver/caddy/stargazers) | Go | Modern reverse proxy with automatic HTTPS & TLS lifecycle | Apache-2.0 |
+| [Traefik Proxy](https://github.com/traefik/traefik) | [![GitHub stars](https://img.shields.io/github/stars/traefik/traefik?style=social&color=white)](https://github.com/traefik/traefik/stargazers) | Go | Cloud-native ingress, automatic service discovery & middleware | MIT |
+| [Kong Gateway](https://github.com/Kong/kong) | [![GitHub stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers) | Lua / OpenResty | Mature plugin ecosystem, DB & DB-less modes, enterprise adoption | Apache-2.0 core |
+| [Istio](https://github.com/istio/istio) | [![GitHub stars](https://img.shields.io/github/stars/istio/istio?style=social&color=white)](https://github.com/istio/istio/stargazers) | Go / C++ / CNCF | Enterprise service mesh ingress & dynamic L4/L7 traffic policies | Apache-2.0 |
+| [Envoy Proxy](https://github.com/envoyproxy/envoy) | [![GitHub stars](https://img.shields.io/github/stars/envoyproxy/envoy?style=social&color=white)](https://github.com/envoyproxy/envoy/stargazers) | C++ / CNCF | Ultra high-performance programmable L4/L7 data plane | Apache-2.0 |
+| [NGINX](https://github.com/nginx/nginx) | [![GitHub stars](https://img.shields.io/github/stars/nginx/nginx?style=social&color=white)](https://github.com/nginx/nginx/stargazers) | C | High-performance reverse proxy, load balancer & web server | BSD-2-Clause |
+| [LiteLLM Gateway](https://github.com/BerriAI/litellm) | [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers) | Python | Universal AI/LLM API gateway proxy with 100+ model routing & budgets | Apache-2.0 |
+| [Cilium](https://github.com/cilium/cilium) | [![GitHub stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers) | Go / C / eBPF / CNCF | Kernel-level eBPF networking, Ingress & Gateway API enforcement | Apache-2.0 |
+| [Apache APISIX](https://github.com/apache/apisix) | [![GitHub stars](https://img.shields.io/github/stars/apache/apisix?style=social&color=white)](https://github.com/apache/apisix/stargazers) | Lua / NGINX / etcd / ASF | Dynamic routing, 100+ hot-reloadable plugins & low latency | Apache-2.0 |
+| [Zuul](https://github.com/Netflix/zuul) | [![GitHub stars](https://img.shields.io/github/stars/Netflix/zuul?style=social&color=white)](https://github.com/Netflix/zuul/stargazers) | Java | Battle-tested JVM edge service gateway for routing & resilience | Apache-2.0 |
+| [Tyk Gateway](https://github.com/TykTechnologies/tyk) | [![GitHub stars](https://img.shields.io/github/stars/TykTechnologies/tyk?style=social&color=white)](https://github.com/TykTechnologies/tyk/stargazers) | Go | Fast API gateway with Universal GraphQL engine & middleware | MPL-2.0 |
+| [Ocelot](https://github.com/ThreeMammals/Ocelot) | [![GitHub stars](https://img.shields.io/github/stars/ThreeMammals/Ocelot?style=social&color=white)](https://github.com/ThreeMammals/Ocelot/stargazers) | C# / .NET | Lightweight .NET-native microservice API gateway | MIT |
+| [KrakenD Community Edition](https://github.com/krakendio/krakend-ce) | [![GitHub stars](https://img.shields.io/github/stars/krakendio/krakend-ce?style=social&color=white)](https://github.com/krakendio/krakend-ce/stargazers) | Go | Stateless high-throughput API gateway & endpoint aggregator | Apache-2.0 |
+| [OpenResty](https://github.com/openresty/openresty) | [![GitHub stars](https://img.shields.io/github/stars/openresty/openresty?style=social&color=white)](https://github.com/openresty/openresty/stargazers) | C / LuaJIT | Fast web & gateway platform integrating NGINX with LuaJIT | BSD-2-Clause |
+| [BFE](https://github.com/bfenetworks/bfe) | [![GitHub stars](https://img.shields.io/github/stars/bfenetworks/bfe?style=social&color=white)](https://github.com/bfenetworks/bfe/stargazers) | Go / CNCF | Enterprise-grade layer 7 routing engine & load balancer | Apache-2.0 |
+| [Easegress](https://github.com/megaease/easegress) | [![GitHub stars](https://img.shields.io/github/stars/megaease/easegress?style=social&color=white)](https://github.com/megaease/easegress/stargazers) | Go | Traffic orchestration & high availability resilience gateway | Apache-2.0 |
+| [HAProxy](https://github.com/haproxy/haproxy) | [![GitHub stars](https://img.shields.io/github/stars/haproxy/haproxy?style=social&color=white)](https://github.com/haproxy/haproxy/stargazers) | C | Industry-standard high-performance TCP/HTTP proxy & balancer | GPL-2.0 |
+| [Spring Cloud Gateway](https://github.com/spring-cloud/spring-cloud-gateway) | [![GitHub stars](https://img.shields.io/github/stars/spring-cloud/spring-cloud-gateway?style=social&color=white)](https://github.com/spring-cloud/spring-cloud-gateway/stargazers) | Java / Spring Boot | Non-blocking reactive API routing layer for Spring microservices | Apache-2.0 |
+| [Higress](https://github.com/alibaba/higress) | [![GitHub stars](https://img.shields.io/github/stars/alibaba/higress?style=social&color=white)](https://github.com/alibaba/higress/stargazers) | Go / C++ / Envoy | Cloud-native Gateway API & AI gateway controller | Apache-2.0 |
+| [Emissary-Ingress](https://github.com/emissary-ingress/emissary) | [![GitHub stars](https://img.shields.io/github/stars/emissary-ingress/emissary?style=social&color=white)](https://github.com/emissary-ingress/emissary/stargazers) | Go / Python / CNCF | Envoy-based Kubernetes ingress controller & API gateway | Apache-2.0 |
+| [Apache ShenYu](https://github.com/apache/shenyu) | [![GitHub stars](https://img.shields.io/github/stars/apache/shenyu?style=social&color=white)](https://github.com/apache/shenyu/stargazers) | Java / ASF | Extensible asynchronous multi-protocol gateway (Dubbo, gRPC) | Apache-2.0 |
+| [Contour](https://github.com/projectcontour/contour) | [![GitHub stars](https://img.shields.io/github/stars/projectcontour/contour?style=social&color=white)](https://github.com/projectcontour/contour/stargazers) | Go / CNCF | Ingress controller & dynamic Envoy control plane for Kubernetes | Apache-2.0 |
+| [Express Gateway](https://github.com/ExpressGateway/express-gateway) | [![GitHub stars](https://img.shields.io/github/stars/ExpressGateway/express-gateway?style=social&color=white)](https://github.com/ExpressGateway/express-gateway/stargazers) | JavaScript / Node.js | Microservices API gateway built completely on Express.js | Apache-2.0 |
+| [Gravitee](https://github.com/gravitee-io/gravitee-api-management) | [![GitHub stars](https://img.shields.io/github/stars/gravitee-io/gravitee-api-management?style=social&color=white)](https://github.com/gravitee-io/gravitee-api-management/stargazers) | Java | Event-native and REST API management platform & gateway | Apache-2.0 core |
+| [Envoy Gateway](https://github.com/envoyproxy/gateway) | [![GitHub stars](https://img.shields.io/github/stars/envoyproxy/gateway?style=social&color=white)](https://github.com/envoyproxy/gateway/stargazers) | Go / Envoy / CNCF | Standardized CNCF implementation of Kubernetes Gateway API | Apache-2.0 |
+| [Gloo Gateway / kgateway](https://github.com/kgateway-dev/kgateway) | [![GitHub stars](https://img.shields.io/github/stars/kgateway-dev/kgateway?style=social&color=white)](https://github.com/kgateway-dev/kgateway/stargazers) | Go / Envoy | Next-generation Kubernetes Gateway API controller & Envoy proxy | Apache-2.0 |
 
-
-| Project                                                                      | Language / Foundation | Primary Strength                       | License         |
-
-| ---------------------------------------------------------------------------- | --------------------- | -------------------------------------- | --------------- |
-
-| [Apache APISIX](https://github.com/apache/apisix)                            | Lua / NGINX / etcd    | Dynamic high-performance API gateway   | Apache-2.0      |
-
-| [Kong Gateway](https://github.com/Kong/kong)                                 | Lua / NGINX           | Mature plugin ecosystem                | Apache-2.0 core |
-
-| [Tyk Gateway](https://github.com/TykTechnologies/tyk)                        | Go                    | API gateway + GraphQL                  | MPL-2.0         |
-
-| [Gravitee](https://github.com/gravitee-io/gravitee-api-management)           | Java                  | API + event management                 | Apache-2.0 core |
-
-| [Traefik Proxy](https://github.com/traefik/traefik)                          | Go                    | Cloud-native ingress / gateway         | MIT             |
-
-| [Envoy Proxy](https://github.com/envoyproxy/envoy)                           | C++                   | Programmable L4/L7 proxy               | Apache-2.0      |
-
-| [Envoy Gateway](https://github.com/envoyproxy/gateway)                       | Go / Envoy            | Kubernetes Gateway API                 | Apache-2.0      |
-
-| [KrakenD Community Edition](https://github.com/krakendio/krakend-ce)         | Go                    | High-performance API aggregation       | Apache-2.0      |
-
-| [Apache ShenYu](https://github.com/apache/shenyu)                            | Java                  | Extensible API gateway                 | Apache-2.0      |
-
-| [Higress](https://github.com/alibaba/higress)                                | Go / Envoy            | Cloud-native gateway                   | Apache-2.0      |
-
-| [Gloo Gateway](https://github.com/kgateway-dev/kgateway)                     | Go / Envoy            | Kubernetes Gateway API                 | Apache-2.0      |
-
-| [HAProxy](https://github.com/haproxy/haproxy)                                | C                     | High-performance proxy / load balancer | GPL-2.0         |
-
-| [NGINX](https://github.com/nginx/nginx)                                      | C                     | Reverse proxy / gateway foundation     | BSD-2-Clause    |
-
-| [Caddy](https://github.com/caddyserver/caddy)                                | Go                    | Simple modern reverse proxy            | Apache-2.0      |
-
-| [Spring Cloud Gateway](https://github.com/spring-cloud/spring-cloud-gateway) | Java                  | Spring-native API gateway              | Apache-2.0      |
-
-| [Zuul](https://github.com/Netflix/zuul)                                      | Java                  | JVM edge proxy                         | Apache-2.0      |
-
-| [Krakend](https://github.com/krakendio/krakend-ce)                           | Go                    | API aggregation                        | Apache-2.0      |
+Apache APISIX, Kong, Envoy and Traefik are among the major open-source gateway choices, with materially different configuration, extension and deployment models.
 
 
 
@@ -3052,46 +2947,37 @@ Therefore, benchmark gateways using your **actual workload and deployment topolo
 
 ---
 
+# ❓ Frequently Asked Questions (FAQ)
 
+### 📌 What is an API Gateway and why do I need one in a microservices architecture?
+An **API Gateway** acts as the single entry point (reverse proxy) for all incoming client traffic into a backend microservices system. Instead of clients directly calling dozens of decoupled services, the gateway manages cross-cutting concerns such as request routing, SSL/TLS termination, authentication (JWT, OAuth2, API Keys), rate limiting, traffic shadowing, and protocol mediation (e.g. REST to gRPC). This centralizes security, reduces backend complexity, and protects upstream services from traffic surges and malicious requests.
 
-## ⭐ Star This Repository
+### ⚖️ What is the difference between an API Gateway and a Service Mesh?
+* **API Gateway (North-South Traffic):** Manages requests flowing into your infrastructure from external consumers, web browsers, mobile apps, and third-party partners. It emphasizes edge security, API monetization, authentication, rate limits, and developer portals.
+* **Service Mesh (East-West Traffic):** Manages communication between internal services within the private network or Kubernetes cluster (e.g., Service A talking to Service B). It focuses on service discovery, mTLS mutual encryption, circuit breaking, observability, and fine-grained traffic shifting (e.g., Istio, Linkerd).
 
+### 🚀 When should I choose an Open-Source API Gateway over a Managed SaaS Gateway?
+* **Choose Open-Source (APISIX, Kong Gateway OSS, Envoy, Traefik, Caddy):** When you require zero vendor lock-in, low egress/runtime latency, complete on-prem or multi-cloud deployment autonomy, compliance with strict data residency regulations, and no per-call or per-seat licensing fees.
+* **Choose Managed SaaS (Kong Konnect, Google Apigee, AWS API Gateway, Azure APIM):** When your team lacks dedicated infrastructure/DevOps engineers to operate 24/7 gateway clusters, or when you require turnkey developer portals, built-in global billing/monetization, and out-of-the-box cloud ecosystem integrations.
 
-
-If you are interested in:
-
-
-
-* API Gateways
-
-* API Management
-
-* Microservices
-
-* Kubernetes
-
-* Cloud-Native Infrastructure
-
-* API Security
-
-* Service Mesh
-
-* API Observability
-
-* Developer Portals
-
-* Open-Source Infrastructure
-
-* AI Gateways
-
-
-
-consider giving this repository a ⭐ **Star** and contributing new projects.
-
-
+### ☸️ How does the Kubernetes Gateway API differ from the traditional Ingress API?
+The standard Kubernetes `Ingress` resource suffered from fragmentation, requiring dozens of vendor-specific annotations for basic features like URL rewrites, canary weighting, and header matching. The **Kubernetes Gateway API** is a modern, expressive, role-oriented standard that decouples infrastructure provisioning (`GatewayClass`), gateway deployment (`Gateway`), and application routing (`HTTPRoute`, `GRPCRoute`, `TCPRoute`). It is natively supported by Envoy Gateway, Traefik, Kong, APISIX, Cilium, and Higress.
 
 ---
 
+## 📈 Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-API-Gateway&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-API-Gateway&type=date&legend=top-left)
+
+---
+
+## ⭐ Star This Repository
+
+If you find this curated API Gateway landscape guide helpful, consider giving this repository a ⭐ **Star** on GitHub and sharing it with colleagues!
+
+Contributions, corrections, and new project submissions are always welcome. Please see [Contributing](#-contributing) to submit a pull request.
+
+---
 
 **Last updated: September 2026**
+
