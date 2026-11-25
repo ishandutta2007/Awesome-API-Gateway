@@ -101,14 +101,16 @@ Commercial and managed API gateway platforms combine runtime traffic management 
 | [Gravitee](https://www.gravitee.io/) | Gravitee | ~$300M+ Valuation | API Management | REST, event APIs, security, gateway, portal and governance | Planet tier starts at $2,500/month (includes 1 production gateway, unlimited APIs and users); Event Management starts at $1,250/month | 14-day free trial for Enterprise Edition (Cockpit access, advanced security policies, no credit card required); Community Edition is free forever open source |
 | [Traefik Hub](https://traefik.io/traefik-hub/) | Traefik | ~$150M+ Valuation | Cloud-native API management | Kubernetes gateway, ingress, API management and observability | Commercial gateway & management tiers start at ~$1,000/month (instance/cluster-based pricing); Traefik Proxy OSS is free | 30-day free trial for Traefik Hub API Gateway / Management with full features and no credit card required; Traefik Proxy is free forever under MIT |
 | [Tyk Cloud](https://tyk.io/) | Tyk | ~$100M+ Valuation | API Management | Gateway, API management, GraphQL, analytics and developer portal | Cloud Core starts at $600/month (includes up to 5 APIs and 10 million monthly calls; scaling to $3,800/mo for 100M calls); Self-Managed custom quoted | 48-hour free trial for Tyk Cloud SaaS with full platform access (or 14-day free trial for self-managed enterprise); Tyk Gateway OSS is free forever under MPL-2.0 |
-| [KrakenD Enterprise](https://www.krakend.io/) | KrakenD | ~$15M+ Valuation | API Gateway / API Aggregation | High-performance gateway, aggregation, security and enterprise management | Flat-rate enterprise subscription starting at ~$1,500/month (~$18,000/year) per cluster with unlimited throughput; managed hosting from ~$11/mo on cloud partners | 2-month (60-day) free trial of KrakenD Enterprise with full feature access (gRPC, WebSockets, FIPS, multi-IdP); Community Edition is free forever open source with no call limits |
-
+| [KrakenD Enterprise](https://www.krakend.io/) | KrakenD | ~$15M+ Valuation | API Gateway / API Aggregation | 
+High-performance gateway, aggregation, security and enterprise management | Flat-rate enterprise subscription starting at ~$1,500/month (~$18,000/year) per cluster with unlimited throughput; managed hosting from ~$11/mo on cloud partners | 2-month (60-day) free trial of KrakenD Enterprise with full feature access (gRPC, WebSockets, FIPS, multi-IdP); Community Edition is free forever open source with no call limits |
+| [APIClaw](https://apiclaw.biz/) | APIClaw | Seed / Early Stage | AI Gateway / LLM API Gateway | Flat-rate OpenAI-compatible gateway, multi-provider routing (Claude, OpenAI, Kimi, Qwen, DeepSeek, GLM) | Flat-rate subscription starting at $19–$129/month | Free 50-request trial  |
 The current API gateway landscape spans gateway-first products such as Kong, Tyk and APISIX, full API-management platforms such as Apigee and WSO2, and cloud-native gateways such as Gloo Gateway.
 
 
 
----
 
+---
+  
 
 
 # 🌍 Open-Source
